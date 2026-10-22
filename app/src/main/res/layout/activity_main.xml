@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F4FF3EF"
+    android:background="#F4F3EF"
     android:padding="20dp">
 
     <!--Bagian Header : sapaan-->
@@ -20,7 +24,7 @@
             android:layout_height="wrap_content"
             android:text="Selamat Datang,"
             android:textSize="14sp"
-            android:textColor="#2D2A26">
+            android:textColor="#2D2A26"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -94,6 +98,59 @@
 </LinearLayout>
 
 
+    <!--Banner Pengumuman Dengan Framelayout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- Layer 1 : Background Lapisan Belakang-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0984E3"/>
+
+        <!-- Layer 2 : Teks Pengumuman Lapisan Depan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PENGUMUMAN PENTING"
+                android:textSize="11sp"
+                android:textColor="#DFE6E9"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ujian Kompetensi RPL Dimulai hari Jumat ini!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <!--Tombol untuk Ke Halaman form-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TombolForm"
+        android:text="+ Tambah Tugas"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0984E3"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
     <!--Bagian Judul : Daftar Tugas Terbaru-->
   <TextView
       android:layout_width="wrap_content"
@@ -130,3 +187,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</FrameLayout>
